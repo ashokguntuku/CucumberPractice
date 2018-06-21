@@ -1,13 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.04975">
-<testcase classname="Deal data creation" name="Free CRM create a new deal scenario" time="48.04975">
-<system-out><![CDATA[Given user is on Login Page.................................................passed
-When Title of Login Page is Free CRM........................................passed
-And User  enters uname and pwd..............................................passed
-And user clicks on Login button.............................................passed
-Then it navigates to Home Page..............................................passed
-Then user moves to new deal page............................................passed
-Then user enters deal details...............................................passed
-Then Close the browser......................................................passed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="0.12623">
+<testcase classname="Free CRM app test" name="Free CRM create deal test" time="0.124142">
+<system-out><![CDATA[Given user is on deal page..................................................passed
+When user fills the deal form...............................................passed
+Then deal is created........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM app test" name="Free CRM create task test" time="0.000592">
+<system-out><![CDATA[Given user is on task page..................................................passed
+When user fills the task form...............................................passed
+Then task is created........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM app test" name="Free CRM create mail test" time="0.001036">
+<system-out><![CDATA[Given user is on mail page..................................................passed
+When user fills the mail form...............................................passed
+Then mail is created........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Free CRM app test" name="Free CRM create mail test 2" time="0.00046">
+<system-out><![CDATA[Given user is on mail page..................................................passed
+When user fills the mail form...............................................passed
+Then mail is created........................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
