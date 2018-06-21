@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/Features/deals.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/java/Features/dealsmap.feature");
 formatter.feature({
   "line": 1,
   "name": "Deal data creation",
@@ -30,104 +30,138 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 8
+    },
+    {
+      "cells": [
         "naveenk",
         "test@123"
       ],
-      "line": 8
+      "line": 9
     }
   ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 9,
-  "name": "user clicks on Login button",
   "keyword": "And "
 });
 formatter.step({
   "line": 10,
+  "name": "user clicks on Login button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 11,
   "name": "it navigates to Home Page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "user moves to new deal page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "user enters deal details",
   "rows": [
     {
       "cells": [
-        "test_deal",
+        "title",
+        "amount",
+        "probability",
+        "commission"
+      ],
+      "line": 14
+    },
+    {
+      "cells": [
+        "test_deal1",
         "1000",
         "50",
         "10"
       ],
-      "line": 13
+      "line": 15
+    },
+    {
+      "cells": [
+        "test_deal2",
+        "2000",
+        "60",
+        "10"
+      ],
+      "line": 16
+    },
+    {
+      "cells": [
+        "test_deal3",
+        "3000",
+        "70",
+        "10"
+      ],
+      "line": 17
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 14,
+  "line": 18,
   "name": "Close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealStepDefinition.user_is_on_Login_Page()"
+  "location": "DealStepWithMapDefinition.user_is_on_Login_Page()"
 });
 formatter.result({
-  "duration": 11390969072,
+  "duration": 12909352539,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.title_of_Login_Page_is_Free_CRM()"
+  "location": "DealStepWithMapDefinition.title_of_Login_Page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 10860662,
+  "duration": 76211410,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_enters_username_and_password(DataTable)"
+  "location": "DealStepWithMapDefinition.user_enters_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 214537293,
+  "duration": 326588600,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_clicks_on_Login_button()"
+  "location": "DealStepWithMapDefinition.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 7406068653,
+  "duration": 5143252030,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.it_navigates_to_Home_Page()"
+  "location": "DealStepWithMapDefinition.it_navigates_to_Home_Page()"
 });
 formatter.result({
-  "duration": 2017785392,
+  "duration": 2016092606,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_moves_to_new_deal_page()"
+  "location": "DealStepWithMapDefinition.user_moves_to_new_deal_page()"
 });
 formatter.result({
-  "duration": 303395281,
+  "duration": 1530780527,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_enters_deal_details(DataTable)"
+  "location": "DealStepWithMapDefinition.user_enters_deal_details(DataTable)"
 });
 formatter.result({
-  "duration": 5535568526,
+  "duration": 25198393777,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.close_the_browser()"
+  "location": "DealStepWithMapDefinition.close_the_browser()"
 });
 formatter.result({
-  "duration": 2102553902,
+  "duration": 849078138,
   "status": "passed"
 });
 });

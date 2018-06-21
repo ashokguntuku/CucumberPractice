@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "src/main/java/Features/deals.feature"
+		features = "src/main/java/Features/dealsmap.feature"
 		,glue= {"stepDefinitions"}
 		,format= {"pretty","html:test-output","json:json_output/cucumber.json","junit:junit_xml/cucumber.xml"}
 		,monochrome = true
